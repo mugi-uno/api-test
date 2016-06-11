@@ -48,7 +48,14 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    jdoc (0.4.2)
+      activesupport
+      erubis
+      json_schema
+      rack
+      redcarpet
     json (1.8.3)
+    json_schema (0.12.5)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -62,6 +69,9 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
+    prmd (0.11.11)
+      erubis (~> 2.7)
+      json_schema (~> 0.3, >= 0.3.1)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -98,6 +108,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.1.2)
+    redcarpet (3.3.4)
     ruby-graphviz (1.2.2)
     spring (1.7.1)
     sprockets (3.6.0)
@@ -119,6 +130,8 @@ PLATFORMS
 DEPENDENCIES
   annotator
   faker
+  jdoc
+  prmd
   rails (= 4.2.6)
   rails-api
   rails-erd

@@ -1,0 +1,78 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+title: FIXME - Item
+description: FIXME
+stability: prototype
+strictProperties: true
+type:
+- object
+definitions:
+  id:
+    description: unique identifier of item
+    readOnly: true
+    format: uuid
+    type:
+    - string
+  name:
+    description: unique name of item
+    readOnly: true
+    type:
+    - string
+  identity:
+    anyOf:
+    - "$ref": "/schemata/item#/definitions/id"
+    - "$ref": "/schemata/item#/definitions/name"
+  created_at:
+    description: when item was created
+    format: date-time
+    type:
+    - string
+  updated_at:
+    description: when item was updated
+    format: date-time
+    type:
+    - string
+links:
+- description: Create a new item.
+  href: "/items"
+  method: POST
+  rel: create
+  schema:
+    properties: {}
+    type:
+    - object
+  title: Create
+- description: Delete an existing item.
+  href: "/items/{(%2Fschemata%2Fitem%23%2Fdefinitions%2Fidentity)}"
+  method: DELETE
+  rel: destroy
+  title: Delete
+- description: Info for existing item.
+  href: "/items/{(%2Fschemata%2Fitem%23%2Fdefinitions%2Fidentity)}"
+  method: GET
+  rel: self
+  title: Info
+- description: List existing items.
+  href: "/items"
+  method: GET
+  rel: instances
+  title: List
+- description: Update an existing item.
+  href: "/items/{(%2Fschemata%2Fitem%23%2Fdefinitions%2Fidentity)}"
+  method: PATCH
+  rel: update
+  schema:
+    properties: {}
+    type:
+    - object
+  title: Update
+properties:
+  created_at:
+    "$ref": "/schemata/item#/definitions/created_at"
+  id:
+    "$ref": "/schemata/item#/definitions/id"
+  name:
+    "$ref": "/schemata/item#/definitions/name"
+  updated_at:
+    "$ref": "/schemata/item#/definitions/updated_at"
+id: schemata/item

@@ -21,6 +21,12 @@ gem 'annotator'
 gem 'faker', group: [:development, :test]
 
 
+group :development do
+  gem 'prmd'
+  gem 'jdoc'
+end
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
