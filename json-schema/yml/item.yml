@@ -1,18 +1,18 @@
 ---
 "$schema": http://json-schema.org/draft-04/hyper-schema
-title: FIXME - Item
-description: FIXME
+title: (サンプル)item
+description: itemだよ
 stability: prototype
 strictProperties: true
 type:
 - object
 definitions:
   id:
-    description: unique identifier of item
+    description: 一意なidだよ
     readOnly: true
     format: uuid
     type:
-    - string
+    - number
   name:
     description: unique name of item
     readOnly: true

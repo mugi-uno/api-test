@@ -7,7 +7,6 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
 gem 'sqlite3'
 
 
@@ -19,6 +18,10 @@ gem 'annotator'
 
 # fake
 gem 'faker', group: [:development, :test]
+
+
+
+
 
 
 group :development do

@@ -6,8 +6,8 @@
   "definitions": {
     "item": {
       "$schema": "http://json-schema.org/draft-04/hyper-schema",
-      "title": "FIXME - Item",
-      "description": "FIXME",
+      "title": "(サンプル)item",
+      "description": "itemだよ",
       "stability": "prototype",
       "strictProperties": true,
       "type": [
@@ -15,11 +15,11 @@
       ],
       "definitions": {
         "id": {
-          "description": "unique identifier of item",
+          "description": "一意なidだよ",
           "readOnly": true,
           "format": "uuid",
           "type": [
-            "string"
+            "number"
           ]
         },
         "name": {
@@ -244,5 +244,14 @@
     "manual": {
       "$ref": "#/definitions/manual"
     }
-  }
+  },
+  "description": "APIサンプルだよ",
+  "id": "hello-prmd",
+  "links": [
+    {
+      "href": "http://localhost:3000",
+      "rel": "self"
+    }
+  ],
+  "title": "API sample application"
 }

@@ -1,19 +1,19 @@
-## <a name="resource-item">Item</a>
+## <a name="resource-item">(サンプル)item</a>
 
 Stability: `prototype`
 
-FIXME
+itemだよ
 
 ### Attributes
 
 | Name | Type | Description | Example |
 | ------- | ------- | ------- | ------- |
 | **created_at** | *date-time* | when item was created | `"2015-01-01T12:00:00Z"` |
-| **id** | *uuid* | unique identifier of item | `"01234567-89ab-cdef-0123-456789abcdef"` |
+| **id** | *uuid* | 一意なidだよ | `"01234567-89ab-cdef-0123-456789abcdef"` |
 | **name** | *string* | unique name of item | `"example"` |
 | **updated_at** | *date-time* | when item was updated | `"2015-01-01T12:00:00Z"` |
 
-### Item Create
+### (サンプル)item Create
 
 Create a new item.
 
@@ -25,7 +25,7 @@ POST /items
 #### Curl Example
 
 ```bash
-$ curl -n -X POST /items \
+$ curl -n -X POST http://localhost:3000/items \
   -d '{
 }' \
   -H "Content-Type: application/json"
@@ -47,7 +47,7 @@ HTTP/1.1 201 Created
 }
 ```
 
-### Item Delete
+### (サンプル)item Delete
 
 Delete an existing item.
 
@@ -59,7 +59,7 @@ DELETE /items/{item_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n -X DELETE /items/$ITEM_ID_OR_NAME \
+$ curl -n -X DELETE http://localhost:3000/items/$ITEM_ID_OR_NAME \
   -H "Content-Type: application/json"
 ```
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Item Info
+### (サンプル)item Info
 
 Info for existing item.
 
@@ -91,7 +91,7 @@ GET /items/{item_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n /items/$ITEM_ID_OR_NAME
+$ curl -n http://localhost:3000/items/$ITEM_ID_OR_NAME
 ```
 
 
@@ -110,7 +110,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Item List
+### (サンプル)item List
 
 List existing items.
 
@@ -122,7 +122,7 @@ GET /items
 #### Curl Example
 
 ```bash
-$ curl -n /items
+$ curl -n http://localhost:3000/items
 ```
 
 
@@ -143,7 +143,7 @@ HTTP/1.1 200 OK
 ]
 ```
 
-### Item Update
+### (サンプル)item Update
 
 Update an existing item.
 
@@ -155,7 +155,7 @@ PATCH /items/{item_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n -X PATCH /items/$ITEM_ID_OR_NAME \
+$ curl -n -X PATCH http://localhost:3000/items/$ITEM_ID_OR_NAME \
   -d '{
 }' \
   -H "Content-Type: application/json"
@@ -205,7 +205,7 @@ POST /manuals
 #### Curl Example
 
 ```bash
-$ curl -n -X POST /manuals \
+$ curl -n -X POST http://localhost:3000/manuals \
   -d '{
 }' \
   -H "Content-Type: application/json"
@@ -239,7 +239,7 @@ DELETE /manuals/{manual_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n -X DELETE /manuals/$MANUAL_ID_OR_NAME \
+$ curl -n -X DELETE http://localhost:3000/manuals/$MANUAL_ID_OR_NAME \
   -H "Content-Type: application/json"
 ```
 
@@ -271,7 +271,7 @@ GET /manuals/{manual_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n /manuals/$MANUAL_ID_OR_NAME
+$ curl -n http://localhost:3000/manuals/$MANUAL_ID_OR_NAME
 ```
 
 
@@ -302,7 +302,7 @@ GET /manuals
 #### Curl Example
 
 ```bash
-$ curl -n /manuals
+$ curl -n http://localhost:3000/manuals
 ```
 
 
@@ -335,7 +335,7 @@ PATCH /manuals/{manual_id_or_name}
 #### Curl Example
 
 ```bash
-$ curl -n -X PATCH /manuals/$MANUAL_ID_OR_NAME \
+$ curl -n -X PATCH http://localhost:3000/manuals/$MANUAL_ID_OR_NAME \
   -d '{
 }' \
   -H "Content-Type: application/json"

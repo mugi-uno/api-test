@@ -1,0 +1,9 @@
+{
+ "description": "APIサンプルだよ",
+ "id": "hello-prmd",
+ "links": [{
+   "href": "http://localhost:3000",
+   "rel": "self"
+ }],
+ "title": "API sample application"
+}
