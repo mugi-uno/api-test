@@ -17,6 +17,10 @@ gem 'rails-erd', group: [:development, :test]
 # comment to model
 gem 'annotator'
 
+# fake
+gem 'faker', group: [:development, :test]
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

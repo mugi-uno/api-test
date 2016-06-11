@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :manuals, except: [:new, :edit]
-  resources :items, except: [:new, :edit]
+  resources :manuals, except: [:new, :edit], shallow: true do
+    resources :items, except: [:new, :edit]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

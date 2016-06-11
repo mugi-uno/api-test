@@ -1,12 +1,8 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :update, :destroy]
 
-  # GET /items
-  # GET /items.json
   def index
-    @items = Item.all
-
-    render json: @items
+    render json: Manual.find(params[:manual_id]).items
   end
 
   # GET /items/1
