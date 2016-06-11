@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: manuals
 #
 #  id          :integer          not null, primary key
 #  title       :text
@@ -9,10 +9,12 @@
 #  updated_at  :datetime         not null
 #
 
-require 'test_helper'
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-class ItemTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
-end
+one:
+  title: MyText
+  description: MyText
+
+two:
+  title: MyText
+  description: MyText

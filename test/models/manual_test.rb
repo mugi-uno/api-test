@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: manuals
 #
 #  id          :integer          not null, primary key
 #  title       :text
@@ -11,7 +11,7 @@
 
 require 'test_helper'
 
-class ItemTest < ActiveSupport::TestCase
+class ManualTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

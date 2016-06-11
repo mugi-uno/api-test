@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: manuals
 #
 #  id          :integer          not null, primary key
 #  title       :text
@@ -9,10 +9,5 @@
 #  updated_at  :datetime         not null
 #
 
-require 'test_helper'
-
-class ItemTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class Manual < ActiveRecord::Base
 end
